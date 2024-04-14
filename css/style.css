@@ -113,3 +113,18 @@ section{
 .texto__icono{
   display: none;
 }
+
+
+.footer{
+  text-align: center;
+  padding: 2rem;
+  /* background-image: url('../image/background.png'); */
+ 
+  font-weight: bold;
+
+  background-color: #F5F5F5;
+opacity: 0.7;
+background: repeating-linear-gradient( 45deg, #EAF2FD, #EAF2FD 13.5px, #F5F5F5 13.5px, #F5F5F5 67.5px );
+}
+
+
