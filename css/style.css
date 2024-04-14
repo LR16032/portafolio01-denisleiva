@@ -1,0 +1,115 @@
+
+body{
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  /* color: #fff; */
+  /* Esto va en tu archivo style.css o donde tengas tus estilos */
+
+ 
+}
+
+section{
+  transform-style: preserve-3d;
+}
+
+/* esto es para el circulo de la imagen */
+.circle-container {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%; /* Esto crea un círculo */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+}
+
+.circle-container img {
+  width: 100%; /* Hace que la imagen llene todo el contenedor circular */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+   /* Asegura que la imagen se comporte como un bloque dentro del contenedor */
+}
+
+.sobremi p{
+  font-size: 1.2rem;
+  width: 83%;
+}
+
+
+.invert-color {
+  width: 100%;
+}
+
+
+
+.imagen__sobremi{
+  transition: opacity 0.3s ease;
+}
+.imagen__sobremi:hover{
+  opacity: 0.8;
+}
+
+
+
+/* la parte de las skills */
+.skills__name{
+  font-weight: bold;
+}
+
+.hobbies_titulo{
+  padding-top: 3rem;
+}
+
+.btn__repositorio{
+  min-width: 6.1rem;
+  min-height: 3rem;
+  border: 2px solid #2A7AE4;
+  color: #2A7AE4;
+}
+
+.btn__repositorio:hover{
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.btn__demo{
+  
+  background-color: #2A7AE4;
+  min-width: 6.1rem;
+  min-height: 3rem;
+}
+
+
+
+
+.formacion__academica {
+  background-color:#F5F5F5;
+  /* Estilos de transición */
+  transition: clip-path 4s cubic-bezier(.25, 1, .30, 1);
+  clip-path: inset(0 100% 0  0); /* Estado inicial */
+  
+}
+
+.titulo_skill{
+  
+  /* Estilos de transición */
+  transition: clip-path 4s cubic-bezier(.25, 1, .30, 1);
+  clip-path: inset(0  0 100% 0); /* Estado inicial */
+  
+}
+
+.container__skill{
+  transition: clip-path 4s cubic-bezier(.25, 1, .30, 1);
+  clip-path: inset(0 100% 0  0); /* Estado inicial */
+}
+
+
+.show {
+  clip-path: inset(0 0 0 0); /* Estado final */
+}
+
+#sobremi__skill {
+  scroll-margin-top: 4rem; /* Ajusta este valor según el tamaño de tu menú de navegación fijo */
+}
+
+
+
+.texto__icono{
+  display: none;
+}

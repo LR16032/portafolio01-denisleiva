@@ -1,0 +1,503 @@
+body{
+    background-color: #F5F5F5;
+     padding-top: 6rem;/* o el valor correspondiente a la altura del encabezado */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    position: fixed;
+    height: 6rem;
+    top: 0;
+     background-color: #F5F5F5;
+     z-index: 1;
+     /* background: radial-gradient(125% 125% at 50% 10%, #000 80%, rgb(16, 13, 26) 100%); */
+   
+}
+
+    .logo{
+        width: 25%;
+        margin-left: 5%;
+    }
+
+    nav{
+        width: 50%;
+        margin-right: 5%;
+       align-self: center;
+    }
+
+/* modificacion de nav */
+.menu__principal{
+display: flex;
+justify-content: space-evenly;
+/* background-color: aqua; */
+font-size: 1.2rem;
+align-items: center;
+}
+.menu__items{
+    transition: opacity 0.3s ease;
+}
+.menu__items :hover{
+    opacity: 0.3 ; 
+    border-bottom: 2px solid linear-gradient(130deg, #00e2ff, #6e808a);
+}
+
+.menu__items {
+    position: relative; /* Necesario para posicionar correctamente el pseudo-elemento */
+}
+
+.menu__items:hover::after {
+    content: ""; /* Se requiere para mostrar el pseudo-elemento */
+    position: absolute; /* Lo posiciona de manera absoluta con respecto al elemento padre */
+    left: 0; /* Lo coloca a la izquierda del elemento padre */
+    bottom: -2px; /* Lo desplaza hacia arriba para cubrir el borde inferior */
+    width: 100%; /* Toma el ancho completo del elemento padre */
+    height: 2px; /* Grosor del borde */
+    background-image: linear-gradient(130deg, #398089, #F5F5F5); /* Degradado lineal como fondo */
+    z-index: 1; /* Asegura que esté por encima del contenido del elemento */
+}
+
+
+
+
+
+/* modificacion sobre mi imagen y texto */
+
+.sobremi{
+display: flex;   
+flex-direction: column-reverse;
+/* background-color: blueviolet; */
+padding-left: 5%;
+padding-right: 5%;
+justify-content: space-between;
+}
+
+.descripcion__sobremi{
+    display: flex;
+    flex-flow: column wrap;
+    /* background-color: burlywood; */
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.descripcion__sobremi h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.circle-container{
+    align-self: center;
+    /* background: aquamarine; */
+}
+
+.contactos__sobremi{
+    display: flex;
+    /* background-color:hotpink; */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.contactos__uno{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* width: 25%; */
+    justify-content: space-evenly;
+}
+
+.sobremi__personal{
+    display: flex;
+    height: 21rem;
+    margin-top: 1rem;
+    background-color: #EAF2FD;
+}
+
+.sobremi__personal__background{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+
+.sobremi__personal__background h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+.sobremi__personal__background img{
+    width: 9%;
+}
+
+
+.sobremi__skill{
+    display: flex;
+    flex-direction: column;
+    /* height: 620px; */
+    /* background-color: aquamarine; */
+}
+
+.skill{
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: rebeccapurple; */
+    height: 50%;
+    h3{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+.container__skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.container__hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:1rem;
+}
+    .itens__skill{
+        display: flex;
+        align-items: flex-end;
+        height: 174px;
+        flex-basis:176px ;
+        flex-grow: 1;
+        background-color: #FFFFFF; 
+        border-radius: 5%;
+       
+            box-shadow: 2px 2px 4px rgba(89, 108, 168, 0.4);
+        
+    }
+
+    .itens__skill ul{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width:50%;
+        justify-content: space-evenly;
+        margin-left: 1rem
+    }
+/* .hobbies{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: blue;
+    height: 50%;
+     */
+
+
+.formacion__academica{
+    background-color: #EAF2FD;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    h3{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.lugares__academica{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen__academica{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+    flex-basis: 23rem;
+    height: 17rem;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(80, 91, 130, 0.4);
+    border-radius: 0% 5% 0% 5%;
+    img{
+        width: auto;
+    }
+}
+
+.imagen__academica__descripcion{
+    display: flex;
+    flex-flow: column wrap;
+    }
+
+    .descripcion__academica{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .experiencia__profesional{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-flow: column wrap;
+        h3{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    }
+
+
+    .experiencia__detalle{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: #00e2ff; */
+    }
+
+
+
+    .experiencia__demo{
+     align-self: center;
+     display: flex;
+     flex-direction: column;
+     gap:1rem;
+     padding-left: 1rem;
+    }
+    .btn_diseno{
+        display: flex;
+        gap:1rem;
+    }
+    .btn__demo{
+        color: #ffffff;;
+        border-radius: 5%;
+    }
+
+
+    nav{
+        display:none;
+    }
+
+
+    .correo__personal{
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+        font-weight: bold;
+
+    }
+  
+    .encriptador__imagen{
+        width: 100%;
+      }
+
+    /* la parte responsive de tablet */
+
+    @media(min-width:768px){
+      
+        .sobremi p{
+            font-size: 1rem;
+        }
+
+        .sobremi{
+            display: flex;   
+            flex-direction: row;
+            /* background-color: blueviolet; */
+            padding-left: 5%;
+            padding-right: 5%;
+            justify-content: space-between;
+            }
+
+            .texto__icono{
+                display: block;
+              }
+        /* esto es para el circulo de la imagen */
+.circle-container {
+  width: 146px;
+  height: 146px;
+  border-radius: 50%; /* Esto crea un círculo */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+}
+
+.circle-container img {
+  width: 100%; /* Hace que la imagen llene todo el contenedor circular */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+   /* Asegura que la imagen se comporte como un bloque dentro del contenedor */
+}
+        
+         
+.contactos__sobremi{
+    display: flex;
+    /* background-color:hotpink; */
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+        
+
+
+    }
+
+    @media(min-width:1200px){
+       
+       body{
+        padding-top: 6rem;
+       }
+        nav{
+            display: block;
+        }
+        .logo{
+            width: 15%;
+            margin-left: 10%;
+            margin-right:5% ;
+        }
+
+        nav{
+            width: 50%;
+            margin-right: 10%;
+           align-self: center;
+        }
+
+        .texto__icono{
+            display: block;
+          }
+        .sobremi{
+            display: flex;   
+            flex-direction: row;
+            /* background-color: blueviolet; */
+            padding-left: 10%;
+            padding-right: 10%;
+            justify-content: space-between;
+            }
+
+            .sobremi__personal__background{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                /* background-color: aqua; */
+                width: 50%;
+                margin-left: 10%;
+            }
+
+                .contactos__sobremi{
+                    display: flex;
+                    /* background-color:hotpink; */
+                    justify-content: space-between;
+                    width: 70%;
+                    align-items: center;
+                }
+
+        .correo__personal{
+            display:none;
+    
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: red; */
+            width: 100%;
+            position: fixed;
+            height: 6rem;
+            top: 0;
+             background-color: #F5F5F5;
+             z-index: 1;
+             /* background: radial-gradient(125% 125% at 50% 10%, #000 80%, rgb(16, 13, 26) 100%); */
+           
+        }
+
+        .circle-container {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%; /* Esto crea un círculo */
+            overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+          }
+          
+          .circle-container img {
+            width: 100%; /* Hace que la imagen llene todo el contenedor circular */
+            height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+             /* Asegura que la imagen se comporte como un bloque dentro del contenedor */
+          }
+
+          .descripcion__sobremi{
+            width: 70%;
+        }
+
+          .descripcion__sobremi h1{
+            font-size: 3.3rem;
+            font-weight: bold;
+            
+        }
+
+
+
+        /* configuracion del skills and hobbies */
+        .skill{
+            margin-left: 10%;
+            margin-right: 10%;
+            /* background-color: rebeccapurple; */
+            height: 50%;
+            h3{
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .itens__skill{
+            flex-grow: 0;
+          
+        }
+
+        .lugares__academica{
+            flex-direction: row;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+
+        .imagen__academica{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items:center;
+             width:  23rem;
+             height: 17rem;
+             background-color: white;
+             box-shadow: 2px 2px 4px rgba(80, 91, 130, 0.4);
+             border-radius: 0% 5% 0% 5%;
+             img{
+                 width: auto;
+             }
+         }
+    
+    }
+
+  
+
+
+
